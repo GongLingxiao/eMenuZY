@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7vd-VY-FCb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MicrosoftYaHei.ttf">
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+        </mutableArray>
+        <mutableArray key="fzchyjw.ttf">
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+            <string>FZCHYJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="8rZ-qo-JTa">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7vd-VY-FCb" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y6R-dB-uC6"/>
+                        <viewControllerLayoutGuide type="bottom" id="O9Z-Rv-HfD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TD3-em-hfT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="list-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="7lV-Q5-ReI">
+                                <rect key="frame" x="260" y="0.0" width="684" height="768"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="s9a-3c-fhO">
+                                <rect key="frame" x="268" y="738" width="668" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.80392156862745101" green="0.76470588235294112" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.50588235294117645" green="0.19215686274509805" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="zrw-ol-5EM">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left-title-new.png" translatesAutoresizingMaskIntoConstraints="NO" id="ePJ-9n-L8T">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="240"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Sj7-lP-G8i">
+                                <rect key="frame" x="12" y="253" width="236" height="484"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DishTypeCell" rowHeight="70" id="17E-vy-kSn" customClass="DishTypeCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="17E-vy-kSn" id="g2c-I1-jNL">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82v-Q6-qL6">
+                                                    <rect key="frame" x="7" y="10" width="223" height="50"/>
+                                                    <state key="normal">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dishTypeBtn" destination="82v-Q6-qL6" id="BsF-Th-b6I"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7vd-VY-FCb" id="UvL-Af-t6j"/>
+                                    <outlet property="delegate" destination="7vd-VY-FCb" id="xIS-hR-b9E"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="y1n-xl-ZJp">
+                                <rect key="frame" x="944" y="0.0" width="80" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mi-b1-r1c">
+                                <rect key="frame" x="944" y="75" width="80" height="90"/>
+                                <state key="normal" backgroundImage="right-1.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" backgroundImage="right-1.png"/>
+                                <state key="selected" backgroundImage="right-1.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="right-1.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackHome" destination="7vd-VY-FCb" eventType="touchUpInside" id="A5k-BE-7W4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quv-Ox-rE5">
+                                <rect key="frame" x="944" y="248" width="80" height="68"/>
+                                <state key="normal" backgroundImage="right-2.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" backgroundImage="right-2.png"/>
+                                <state key="selected" backgroundImage="right-2.png"/>
+                                <state key="highlighted" backgroundImage="right-2.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSearchMenu" destination="7vd-VY-FCb" eventType="touchUpInside" id="xqu-0q-nQU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1y-ro-dae">
+                                <rect key="frame" x="944" y="618" width="80" height="68"/>
+                                <state key="normal" backgroundImage="return-1.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" backgroundImage="return-1.png"/>
+                                <state key="selected" backgroundImage="return-1.png"/>
+                                <state key="highlighted" backgroundImage="return-1.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickReturnBtn:" destination="7vd-VY-FCb" eventType="touchUpInside" id="7c7-BJ-vsQ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search_topflag.png" translatesAutoresizingMaskIntoConstraints="NO" id="ly1-Ri-TJK">
+                                <rect key="frame" x="464" y="0.0" width="277" height="68"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="当前搜索:海鲜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEg-Iu-ZWx">
+                                <rect key="frame" x="476" y="10" width="252" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="16"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.61176470589999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="未搜索到相关菜品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzY-zr-uUZ">
+                                <rect key="frame" x="434" y="195" width="337" height="35"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMd-HR-Kce">
+                                <rect key="frame" x="260" y="0.0" width="684" height="768"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="dishTypeTableView" destination="Sj7-lP-G8i" id="C3O-yb-MVr"/>
+                        <outlet property="leftBG" destination="zrw-ol-5EM" id="Ovr-KX-46c"/>
+                        <outlet property="logoView" destination="ePJ-9n-L8T" id="gj2-rm-sLi"/>
+                        <outlet property="menuPageControl" destination="s9a-3c-fhO" id="tMR-Wm-vx8"/>
+                        <outlet property="menuScrollView" destination="YMd-HR-Kce" id="Pod-ty-FdK"/>
+                        <outlet property="noRecord" destination="nzY-zr-uUZ" id="NtI-mv-e8x"/>
+                        <outlet property="nowSearch" destination="qEg-Iu-ZWx" id="ddg-G4-zqy"/>
+                        <outlet property="returnBtn" destination="k1y-ro-dae" id="9Is-09-DqU"/>
+                        <outlet property="rightBG" destination="y1n-xl-ZJp" id="GT6-La-tzA"/>
+                        <outlet property="searchBG" destination="ly1-Ri-TJK" id="JGb-TJ-CEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsv-Dq-hhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="289"/>
+        </scene>
+        <!--Menu List View Controller-->
+        <scene sceneID="LQe-Wk-eF6">
+            <objects>
+                <viewController storyboardIdentifier="MenuListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6wZ-je-eq7" customClass="MenuListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dJO-Y6-hgs"/>
+                        <viewControllerLayoutGuide type="bottom" id="8IX-gM-iRq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R0U-57-FwK">
+                        <rect key="frame" x="0.0" y="0.0" width="684" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="684" height="768"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJg-7e-ayR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="299"/>
+        </scene>
+        <!--Dish Detail View Controller-->
+        <scene sceneID="yYA-Vg-LOS">
+            <objects>
+                <viewController storyboardIdentifier="DishDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0TN-8P-3Iy" customClass="DishDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9He-fE-rfM"/>
+                        <viewControllerLayoutGuide type="bottom" id="o1R-ki-PuY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Bu-uB-Epo">
+                        <rect key="frame" x="0.0" y="0.0" width="670" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4002.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ap2-q2-piH">
+                                <rect key="frame" x="70" y="50" width="530" height="380"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="center-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-jl-OsV">
+                                <rect key="frame" x="0.0" y="0.0" width="670" height="768"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="麻辣香锅麻辣香锅香锅" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AN-YE-DyQ">
+                                <rect key="frame" x="39" y="482" width="269" height="38"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="25"/>
+                                <color key="textColor" red="0.7686274509803922" green="0.61176470588235299" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="center-cutline.png" translatesAutoresizingMaskIntoConstraints="NO" id="WoC-dp-90j">
+                                <rect key="frame" x="39" y="590" width="269" height="19"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="小份" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A84-Oz-XN5">
+                                <rect key="frame" x="65" y="570" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="18"/>
+                                <color key="textColor" red="0.74117647058823533" green="0.15686274509803921" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="标准份" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7x-t0-w6x">
+                                <rect key="frame" x="65" y="620" width="85" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="18"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="大份" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHk-Cw-ga3">
+                                <rect key="frame" x="65" y="670" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="18"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="center-cutline.png" translatesAutoresizingMaskIntoConstraints="NO" id="NhA-vU-xM6">
+                                <rect key="frame" x="39" y="640" width="269" height="19"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="center-cutline.png" translatesAutoresizingMaskIntoConstraints="NO" id="8JP-iF-R5w">
+                                <rect key="frame" x="39" y="690" width="269" height="19"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPt-uI-rzQ">
+                                <rect key="frame" x="260" y="573" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="center-word.png" translatesAutoresizingMaskIntoConstraints="NO" id="sLG-Bt-jyO">
+                                <rect key="frame" x="330" y="458" width="326" height="284"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzt-ws-qOJ">
+                                <rect key="frame" x="346" y="480" width="295" height="225"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.61176470589999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLm-kt-PUe">
+                                <rect key="frame" x="556" y="383" width="40" height="45"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zB7-zV-kg6">
+                                <rect key="frame" x="518" y="383" width="40" height="45"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYK-CO-GeP">
+                                <rect key="frame" x="278" y="573" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meY-N6-AHl">
+                                <rect key="frame" x="285" y="573" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufs-lO-G4x">
+                                <rect key="frame" x="260" y="623" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB2-Qh-rpf">
+                                <rect key="frame" x="278" y="623" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75O-ug-OS0">
+                                <rect key="frame" x="285" y="623" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBF-LW-q9L">
+                                <rect key="frame" x="260" y="673" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTA-6t-2H9">
+                                <rect key="frame" x="278" y="673" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1g-e4-6ZF">
+                                <rect key="frame" x="285" y="673" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="FZCHYJW--GB1-0" family="FZCuHuoYi-M25S" pointSize="12"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="670" height="768"/>
+                    <connections>
+                        <outlet property="bigCutLine" destination="8JP-iF-R5w" id="yj8-Xc-jVe"/>
+                        <outlet property="bigLabel" destination="A84-Oz-XN5" id="mcF-7W-uZu"/>
+                        <outlet property="bigLine" destination="cTA-6t-2H9" id="qd9-wZ-1J7"/>
+                        <outlet property="bigUnit" destination="c1g-e4-6ZF" id="QSl-Om-vUk"/>
+                        <outlet property="bigYuan" destination="qBF-LW-q9L" id="Fk4-pn-PBc"/>
+                        <outlet property="descImage" destination="sLG-Bt-jyO" id="Bay-1e-kSe"/>
+                        <outlet property="descText" destination="Wzt-ws-qOJ" id="94q-uk-5mC"/>
+                        <outlet property="dishImage" destination="Ap2-q2-piH" id="OjE-N8-WOx"/>
+                        <outlet property="dishName" destination="8AN-YE-DyQ" id="zDw-zL-tSn"/>
+                        <outlet property="leftTag" destination="zB7-zV-kg6" id="S90-zQ-Xyn"/>
+                        <outlet property="normalCutLine" destination="NhA-vU-xM6" id="bfx-Lk-EZc"/>
+                        <outlet property="normalLabel" destination="X7x-t0-w6x" id="MJj-CX-69C"/>
+                        <outlet property="normalLine" destination="tB2-Qh-rpf" id="7ZW-Vl-hsx"/>
+                        <outlet property="normalUnit" destination="75O-ug-OS0" id="PId-ML-ZOt"/>
+                        <outlet property="normalYuan" destination="Ufs-lO-G4x" id="oMX-UQ-aKC"/>
+                        <outlet property="rightTag" destination="YLm-kt-PUe" id="Krf-Ec-fbX"/>
+                        <outlet property="smallCutLine" destination="WoC-dp-90j" id="4nA-i8-gTQ"/>
+                        <outlet property="smallLabel" destination="A84-Oz-XN5" id="bl8-Zn-82h"/>
+                        <outlet property="smallLine" destination="pYK-CO-GeP" id="e0m-M9-CIg"/>
+                        <outlet property="smallUnit" destination="meY-N6-AHl" id="6H5-6b-LVU"/>
+                        <outlet property="smallYuan" destination="UPt-uI-rzQ" id="aio-I0-xjv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WdY-iR-sqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="1125"/>
+        </scene>
+        <!--Search Dish View Controller-->
+        <scene sceneID="CQH-Xx-NNL">
+            <objects>
+                <viewController storyboardIdentifier="SearchDishViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="avM-So-TbC" customClass="SearchDishViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oeo-hd-hiv"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGA-5x-YOI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDy-jy-l6y">
+                        <rect key="frame" x="0.0" y="0.0" width="670" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="list-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="jo1-rz-NY6">
+                                <rect key="frame" x="0.0" y="0.0" width="670" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search_textbox.png" translatesAutoresizingMaskIntoConstraints="NO" id="AbA-oq-hUa">
+                                <rect key="frame" x="32" y="39" width="440" height="75"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgi-Bv-dU3">
+                                <rect key="frame" x="490" y="45" width="157" height="68"/>
+                                <state key="normal" backgroundImage="search_btnOk.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doSearch:" destination="avM-So-TbC" eventType="touchUpInside" id="g99-pA-Moy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search-hot-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="VKs-S8-X8M">
+                                <rect key="frame" x="26" y="121" width="619" height="198"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search-histroy.png" translatesAutoresizingMaskIntoConstraints="NO" id="d1R-Ox-tD1">
+                                <rect key="frame" x="26" y="327" width="625" height="421"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3MB-ab-rsd">
+                                <rect key="frame" x="35" y="340" width="600" height="386"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="SearchDishCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchDishCell" id="O4E-ys-F0Y" customClass="SearchDishCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O4E-ys-F0Y" id="C4e-Mm-dLC">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qh-Qu-laD">
+                                                    <rect key="frame" x="76" y="0.0" width="491" height="65"/>
+                                                    <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="25"/>
+                                                    <color key="textColor" red="0.45882352939999999" green="0.4431372549" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Zo-48-bDB">
+                                                    <rect key="frame" x="25" y="20" width="25" height="25"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清除搜索记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEe-Ew-mui">
+                                                    <rect key="frame" x="156" y="0.0" width="311" height="65"/>
+                                                    <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="25"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dishImage" destination="4Zo-48-bDB" id="G4E-fC-ze0"/>
+                                            <outlet property="lblDishCode" destination="DEe-Ew-mui" id="xG5-W5-FhT"/>
+                                            <outlet property="lblDishName" destination="6Qh-Qu-laD" id="yew-bY-JVf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="avM-So-TbC" id="TjA-wJ-7pQ"/>
+                                    <outlet property="delegate" destination="avM-So-TbC" id="oCJ-yP-wgo"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="热门搜索：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6e-eV-68Y">
+                                <rect key="frame" x="59" y="147" width="137" height="49"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="25"/>
+                                <color key="textColor" red="0.74117647060000003" green="0.15686274510000001" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="130" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGL-MJ-dgV">
+                                <rect key="frame" x="204" y="152" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.90980392156862744" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="24"/>
+                                <state key="normal" title="川菜">
+                                    <color key="titleColor" red="0.45882352941176469" green="0.44313725490196076" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="133" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74X-MO-FZT">
+                                <rect key="frame" x="204" y="227" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.90980392160000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="24"/>
+                                <state key="normal" title="川菜">
+                                    <color key="titleColor" red="0.45882352939999999" green="0.4431372549" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="134" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6S-C9-iaZ">
+                                <rect key="frame" x="352" y="227" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.90980392160000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="24"/>
+                                <state key="normal" title="川菜">
+                                    <color key="titleColor" red="0.45882352939999999" green="0.4431372549" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="131" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy7-wE-z90">
+                                <rect key="frame" x="352" y="152" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.90980392160000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="24"/>
+                                <state key="normal" title="川菜">
+                                    <color key="titleColor" red="0.45882352939999999" green="0.4431372549" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="132" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVI-nm-Nue">
+                                <rect key="frame" x="499" y="152" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.90980392160000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="24"/>
+                                <state key="normal" title="川菜">
+                                    <color key="titleColor" red="0.45882352939999999" green="0.4431372549" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入菜品搜索" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-8N-awV">
+                                <rect key="frame" x="48" y="45" width="409" height="68"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" tag="135" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HZ-lt-yFE">
+                                <rect key="frame" x="499" y="227" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.90980392160000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="24"/>
+                                <state key="normal" title="川菜">
+                                    <color key="titleColor" red="0.45882352939999999" green="0.4431372549" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="670" height="768"/>
+                    <connections>
+                        <outlet property="btnFive" destination="w6S-C9-iaZ" id="Leh-mH-fJd"/>
+                        <outlet property="btnFour" destination="74X-MO-FZT" id="0tz-dd-EhL"/>
+                        <outlet property="btnOne" destination="kGL-MJ-dgV" id="kYk-Rq-8ED"/>
+                        <outlet property="btnSix" destination="0HZ-lt-yFE" id="umw-tn-aei"/>
+                        <outlet property="btnThree" destination="XVI-nm-Nue" id="Lo6-W0-Lzc"/>
+                        <outlet property="btnTwo" destination="gy7-wE-z90" id="jzn-oY-7GA"/>
+                        <outlet property="searchText" destination="GR9-8N-awV" id="EWw-66-ioT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVI-zq-Su3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="1125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4002.jpg" width="837" height="554"/>
+        <image name="center-bg.png" width="1370" height="1536"/>
+        <image name="center-cutline.png" width="538" height="37"/>
+        <image name="center-word.png" width="651" height="568"/>
+        <image name="clock.png" width="50" height="50"/>
+        <image name="left-bg.png" width="520" height="1536"/>
+        <image name="left-title-new.png" width="520" height="479"/>
+        <image name="list-bg.png" width="1368" height="1534"/>
+        <image name="return-1.png" width="159" height="138"/>
+        <image name="right-1.png" width="159" height="180"/>
+        <image name="right-2.png" width="159" height="136"/>
+        <image name="right-bg.png" width="160" height="1537"/>
+        <image name="search-histroy.png" width="1248" height="814"/>
+        <image name="search-hot-bg.png" width="1238" height="396"/>
+        <image name="search_btnOk.png" width="313" height="136"/>
+        <image name="search_textbox.png" width="880" height="149"/>
+        <image name="search_topflag.png" width="555" height="136"/>
+    </resources>
+</document>

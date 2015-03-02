@@ -1,0 +1,23 @@
+//
+//  eMenuZY-PrefixHeader.pch
+//  eMenuZY
+//
+//  Created by 宫凌霄 on 15/1/17.
+//  Copyright (c) 2015年 宫凌霄. All rights reserved.
+//
+
+#ifndef eMenuZY_eMenuZY_PrefixHeader_pch
+#define eMenuZY_eMenuZY_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define WEBSERVICE_ADDRESS @"http://192.168.1.119:8755/"
+#define PAGE_ITEM 4
+#define IMAGE_PATH @"image"
+#endif
+
+
+
+#ifdef __OBJC__
+#import "SystemUtil.h"
+#endif
